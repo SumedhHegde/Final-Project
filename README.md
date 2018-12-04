@@ -1,29 +1,22 @@
 # 590PR Final_Project
-Fork from here to create your final project repository.
 
-Two things are different than all the previous assignments in 590PR regarding the permissions settings:
 
-1. Please KEEP the "All_Students" team to have Read access.  
-2. Whenever you choose to, you are welcome to change your Final Project repository to private or to public.  This will enable you to list it in your resume, website, or other portfolio.
-
-DELETE these lines from TEMPLATE up.
-
-TEMPLATE for your report to fill out:
-
-# Title: 
+# Title: Monte Carlo Simulation for a Basketball Game.
 
 ## Team Member(s):
-(Note: Don't put your email addresses here (which is public).  If a student wants their NAME hidden as well, due to optional FERPA regulations, they can be listed purely by their GitHub ID).
+Sumedh Hegde, Alice Bhopalwala
 
 # Monte Carlo Simulation Scenario & Purpose:
-(be sure to read the instructions given in course Moodle)
+In a game of basketball, when there is 30seconds left on the clock and down by 3 points, Is it better to attempt a hard 3-pointer or an easy 2-pointer and get another possesstion (Fouling the opponent so that they are forced to make a free throw). 
 
 ## Simulation's variables of uncertainty
-List and describe your simulation's variables of uncertainty (where you're using pseudo-random number generation). For each such variable, how did you decide the range and probability distribution to use?  Do you think it's a good representation of reality?
+/// (diff free throw/2pt/3pt probs)
 
 ## Hypothesis or hypotheses before running the simulation:
+Hypothesis: If a team is down by 3 points with 30seconds on the clock, it is always better to score a quick easy 2 pointer and foul the oppopents (preferably a weak free throw taker), and attempt another 2 pointer.
 
-## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
+## Analytical Summary of your findings: 
+///
 
 ## Instructions on how to use the program:
 
