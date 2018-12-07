@@ -10,7 +10,19 @@ Sumedh Hegde, Alice Bhopalwala
 In a game of basketball, when there is 30seconds left on the clock and down by 3 points, Is it better to attempt a hard 3-pointer or an easy 2-pointer and get another possession (Fouling the opponent so that they are forced to make a free throw). 
 
 ## Simulation's variables of uncertainty
-/// (diff free throw/2pt/3pt probs)
+Home teams:
+2-pt conversion rate
+3-pt conversion rate
+Offensive rebound and Defensive rebound
+
+Opponent:
+2-pt conversion rate
+3-pt conversion rate
+Offensive rebound and Defensive rebound
+Free throw conversion rate
+Free throw rebound rate
+
+Time to shoot and Time to foul
 
 ## Hypothesis or hypotheses before running the simulation:
 Hypothesis: If a team is down by 3 points with 30seconds on the clock, it is always better to score a quick easy 2 pointer and foul the opponents (preferably a weak free throw taker), and attempt another 2 pointers.
