@@ -11,16 +11,16 @@ In a game of basketball, when there is 30seconds left on the clock and down by 3
 
 ## Simulation's variables of uncertainty
 Home teams:
-2-pt conversion rate
-3-pt conversion rate
+2-pt conversion rate,
+3-pt conversion rate,
 Offensive rebound and Defensive rebound
 
 Opponent:
-2-pt conversion rate
-3-pt conversion rate
-Offensive rebound and Defensive rebound
-Free throw conversion rate
-Free throw rebound rate
+2-pt conversion rate,
+3-pt conversion rate,
+Offensive rebound and Defensive rebound,
+Free throw conversion rate,
+Free throw rebound rate,
 
 Time to shoot and Time to foul
 
