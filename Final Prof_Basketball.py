@@ -4,6 +4,7 @@ import pandas as pd
 import random
 
 class BasketBallMC():
+    """ Class to perform MonteCarlo simulation of Basketball game"""
 
     def __init__(self):
         self.colors = [(31, 119, 180), (174, 199, 232), (255, 127,  14),
@@ -19,6 +20,23 @@ class BasketBallMC():
           self.colors[i] = (r / 255., g / 255., b / 255.)
 
     def attemptThree(self):
+      """ Return true if we can win the game in this trial by taking a 3-point shot
+          and completing it before overtime
+
+          >>> b = BasketBallMC()
+          >>> b.threePtPercent = 101
+          >>> b.overtimePercent = 101
+          >>> b.attemptThree()
+          True
+          >>> b.threePtPercent = 101
+          >>> b.overtimePercent = -1
+          >>> b.attemptThree()
+          False
+          >>> b.threePtPercent = -1
+          >>> b.overtimePercent = 101
+          >>> b.attemptThree()
+          False
+      """
       if np.random.randint(0, high=100) < self.threePtPercent:
         if np.random.randint(0, high=100) < self.overtimePercent:
           return True #We won!!
@@ -87,7 +105,24 @@ class BasketBallMC():
             return False
 
     def main(self):
-        data = pd.read_csv(r'C:\Users\hegde\Documents\Final-Project\Basketball.csv')
+        """ Main driver function that runs the Monte Carlo simulation for the game using data from
+            input CSV. It displays a line plot for each player showing number of wins obtained for
+            each trial either by taking a 2-pt shot or 3-pt shot.
+
+            >>> b = BasketBallMC()
+            >>> b.main() # doctest:+ELLIPSIS
+            Line2D(Lebron James Wins Taking Three Point: ...%)
+            Line2D(Lebron James Wins Taking Two Point: ...%)
+            Line2D(Kyrie Irving Wins Taking Three Point: ...%)
+            Line2D(Kyrie Irving Wins Taking Two Point: ...%)
+            Line2D(Steph Curry Wins Taking Three Point: ...%)
+            Line2D(Steph Curry Wins Taking Two Point: ...%)
+            Line2D(Kyle Krover Wins Taking Three Point: ...%)
+            Line2D(Kyle Krover Wins Taking Two Point: ...%)
+            Line2D(Dirk Nowitzki Wins Taking Three Point: ...%)
+            Line2D(Dirk Nowitzki Wins Taking Two Point: ...%)
+        """
+        data = pd.read_csv(r'Basketball.csv')
         plt.figure(figsize=(14,14))
         names=['Lebron James', 'Kyrie Irving', 'Steph Curry', 'Kyle Krover', 'Dirk Nowitzki']
         threePercents = [35.4,46.8,44.3,49.2, 38.0]
@@ -145,6 +180,7 @@ class BasketBallMC():
         legend = plt.legend(loc='upper left', shadow=True,)
         for legobj in legend.legendHandles:
             legobj.set_linewidth(2.6)
+            print(str(legobj))
         plt.show()
 
 if __name__ == "__main__":
