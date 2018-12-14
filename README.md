@@ -31,5 +31,6 @@ Hypothesis: If a team is down by 3 points with 30seconds on the clock, it is alw
 The observations show that for every player the rate of the wins at 3 pointers is higher than taking a quick 2 pointer then attempting a second one. As a conclusion, we reject our hypothesis.
 
 ## Instructions on how to use the program:
+Download the .py and .csv file and save them in the same directory in your computer. Run the program in Python 3.6 or up.
 
 ## All Sources Used:
