@@ -5,8 +5,11 @@
 
 ## Team Member(s):
 Sumedh Hegde, Alice Bhopalwala
+
 In-line comments: Sumedh Hegde
+
 Doctests: Alice Bhopalwala
+
 The code had equal contributions from both.
 
 # Monte Carlo Simulation Scenario & Purpose:
