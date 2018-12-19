@@ -5,6 +5,9 @@
 
 ## Team Member(s):
 Sumedh Hegde, Alice Bhopalwala
+In-line comments: Sumedh Hegde
+Doctests: Alice Bhopalwala
+The code had equal contributions from both.
 
 # Monte Carlo Simulation Scenario & Purpose:
 In a game of basketball, when there is 30seconds left on the clock and down by 3 points, Is it better to attempt a hard 3-pointer or an easy 2-pointer and get another possession (Fouling the opponent so that they are forced to make a free throw). 
