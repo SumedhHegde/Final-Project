@@ -6,7 +6,7 @@
 ## Team Member(s):
 Sumedh Hegde, Alice Bhopalwala
 
-In-line comments: Sumedh Hegde
+Code design, Data Collection, In-line comments: Sumedh Hegde
 
 Doctests: Alice Bhopalwala
 
